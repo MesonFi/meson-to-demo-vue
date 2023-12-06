@@ -1,0 +1,21 @@
+{
+  "name": "meson-to-demo-vue",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mesonfi/to": "^0.5.0-rc.1",
+    "@particle-network/auth": "^1.2.2",
+    "@particle-network/provider": "^1.2.1",
+    "events": "^3.3.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
+    "vite": "^4.4.11"
+  }
+}
