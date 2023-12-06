@@ -23,9 +23,12 @@ onMounted(() => {
   })
 
   const particleProvider = new ParticleProvider(particle.auth)
+  particleProvider.request({ method: 'eth_accounts' })
+    .then(accounts => {
+      const meson2 = new MesonTo(window)
+      meson2.open({ id: 'opbnb', addr: accounts[0], provider: particleProvider }, 'iframe')
+    })
 
-  const meson2 = new MesonTo(window)
-  meson2.open({ id: 'demo2', provider: particleProvider }, 'iframe')
 })
 </script>
 
